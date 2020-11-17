@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
+    <script
+      src="https://kit.fontawesome.com/25bc89a4e6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <footer>
+      <div class="main">
+        <!--Left block-->
+        <div class="left">
+          <h2>About me</h2>
+          <p>
+            Welcome to my educational website! <br />
+            I'm trader, financial educator, blogger and programmer. If you have
+            any suggestion, question or partnership offer please write me
+            nadiia@gmail.com (reply within 24 hours). You can reach me in social
+            media.
+          </p>
+        </div>
+
+        <!--Central block-->
+        <!--Ad your social media links-->
+        <div class="center">
+          <div class="social-links">
+            <a
+              href="https://www.instagram.com/my_financial_blog/"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a
+              href="https://www.youtube.com/channel/UCvuuBlB_8kq6NKeQH2M0-WA?view_as=subscriber"
+              target="_blank"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+
+            <a href="https://my-financial-wealth.com/" target="_blank">
+              <i class="fab fa-wordpress"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/nadiia-g-54664816b/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/NadiiaCode" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <!--Right block-->
+        <div class="right">
+          <div class="wrapper">
+            <h2>Write me</h2>
+            <form id="myform">
+              <div class="input_field">
+                <input type="text" placeholder="Name" id="name" />
+              </div>
+              <div class="input_field">
+                <input type="text" placeholder="Email" id="Email" />
+              </div>
+              <div class="input_field">
+                <textarea placeholder="Message" id="message"></textarea>
+              </div>
+              <button class="btn">SEND</button>
+            </form>
+          </div>
+        </div>
+
+        <!--Copyright-->
+        <div class="footer-bottom">
+          &copy; Copyright 2020. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #300e28;
+        font-family: "Poppins", sans-serif;
+      }
+
+      footer {
+        width: 100%;
+        bottom: 0;
+        position: fixed;
+        background: linear-gradient(rgb(255, 235, 255), rgb(122, 105, 122));
+      }
+
+      /*Copyright part*/
+      .footer-bottom {
+        height: 40px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        padding-top: 10px;
+        position: absolute;
+        text-align: center;
+        color: rgb(73, 9, 70);
+      }
+
+      .main {
+        display: flex;
+      }
+
+      .left {
+        width: 30%;
+        padding: 10px;
+        font-size: 17px;
+        font-weight: 400;
+        text-align: justify;
+        float: left;
+      }
+
+      .center {
+        width: 40%;
+        padding: 10px;
+        float: center;
+      }
+
+      .right {
+        width: 30%;
+        padding: 10px;
+        font-size: 17px;
+        float: right;
+      }
+
+      h2 {
+        padding-left: 60px;
+        font-weight: 700;
+      }
+
+      /*social media links and hover*/
+      .social-links {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+      }
+
+      a {
+        height: 65px;
+        width: 65px;
+        margin: 0 15px; /*as bigger margin as bigger distance between icons*/
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        background-color: rgb(245, 212, 243);
+        border-radius: 50%;
+        display: flex;
+        border: 1px solid rgba(214, 202, 214, 0.7);
+        box-shadow: 8px 8px 12px -2px rgb(175, 180, 184),
+          -5px -5px 9px -2px rgb(162, 165, 165);
+        transition: transform 1s;
+      }
+
+      a i {
+        font-size: 40px;
+        color: rgb(77, 113, 119);
+        transition: transform 1s;
+      }
+
+      a:hover {
+        box-shadow: inset 6px 6px 8px -2px rgb(159, 162, 165),
+          -6px -6px 8px -2px rgb(180, 199, 202),
+          2px 12px 10px -10px rgb(124, 146, 143);
+        border: 2px solid rgba(185, 158, 185, 0.4);
+        transform: translateY(7px); /*-7px translatey up*/
+      }
+
+      a:hover i {
+        transform: scale(0.85);
+      }
+
+      a:hover .fa-instagram {
+        color: #e4405f;
+      }
+
+      a:hover .fa-youtube {
+        color: #cd201f;
+      }
+
+      a:hover .fa-wordpress {
+        color: #21759b;
+      }
+
+      a:hover .fa-linkedin {
+        color: #0077b5;
+      }
+
+      a:hover .fa-github {
+        color: #333;
+      }
+
+      /*Basic write me form*/
+      .wrapper {
+        width: 330px;
+        position: absolute;
+      }
+
+      .wrapper .input_field input[type="text"],
+      textarea {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 5px;
+        border: none;
+        outline: none;
+      }
+
+      .wrapper textarea {
+        height: 50px;
+      }
+
+      button {
+        width: 50px;
+        height: 30px;
+        margin-left: 90px;
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+        color: #75136d;
+        background: rgb(174, 189, 190);
+        border: 2px solid rgba(113, 124, 124, 0.5);
+        border-radius: 30%;
+      }
+    </style>
+  </body>
+</html>
